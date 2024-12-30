@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Pop-up</title>
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="background-overlay"></div>
+        <div class="background-text">
+            Happy New Year 2025 bạn iu của toyyyyy :>>>>>>>>>>>
+        </div>
+        <div class="container">
+            <div class="letter" onclick="openPopup(1)">
+                <div class="envelope">
+                    <div class="flap"></div>
+                    <div class="letter-text">Mục Tiêu</div>
+                </div>
+            </div>
+            <div class="letter" onclick="openPopup(2)">
+                <div class="envelope">
+                    <div class="flap"></div>
+                    <div class="letter-text">Kế Hoạch</div>
+                </div>
+            </div>
+            <div class="letter" onclick="openPopup(3)">
+                <div class="envelope">
+                    <div class="flap"></div>
+                    <div class="letter-text">Nhìn lại</div>
+                </div>
+            </div>
+            <div class="letter" onclick="openPopup(4)">
+                <div class="envelope">
+                    <div class="flap"></div>
+                    <div class="letter-text">Cảm ơn</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="welcome-popup" class="popup welcome-popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeWelcomePopup()">&times;</span>
+            <div id="welcome-body">
+                <h2>Đây là một chiếc tâm thư gửi đến người quan trọng nhất với toy</h2>
+                <p>Nhấp vào các mấy cái bên trong để đọc tâm thư của toy nhó <3.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div id="popup-body">
+                <!-- Nội dung sẽ được thay đổi ở đây -->
+            </div>
+            <button id="next-content" onclick="nextContent()">Next</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
